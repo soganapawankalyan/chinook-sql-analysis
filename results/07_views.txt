@@ -1,0 +1,10 @@
+view_name           row_count
+------------------  ---------
+v_sales_lines       2240     
+v_monthly_kpis      60       
+v_customer_summary  59       
+v_country_summary   24       
+v_genre_summary     24       
+view_total  invoice_total
+----------  -------------
+2328.6      2328.6       

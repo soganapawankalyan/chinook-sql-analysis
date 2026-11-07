@@ -1,0 +1,35 @@
+customers  repeat_customers  repeat_rate_pct  avg_orders_per_customer
+---------  ----------------  ---------------  -----------------------
+59         59                100.0            6.98                   
+orders  customers
+------  ---------
+6       1        
+7       58       
+repeat_purchases  avg_days_between  min_days  max_days
+----------------  ----------------  --------  --------
+353               234.6             41.0      584.0   
+gap_bucket    purchases
+------------  ---------
+31-90 days    58       
+91-180 days   111      
+181-365 days  103      
+365+ days     81       
+cohort_year  y0_customers  active_year_1  active_year_2  active_year_3  active_year_4
+-----------  ------------  -------------  -------------  -------------  -------------
+2021         46            33             37             36             33           
+2022         13            10             11             13             0            
+CustomerId  customer            Country    last_date            days_inactive  orders  lifetime_revenue
+----------  ------------------  ---------  -------------------  -------------  ------  ----------------
+57          Luis Rojas          Chile      2024-10-14 00:00:00  434            7       46.62           
+17          Jack Smith          USA        2024-07-31 00:00:00  509            7       39.62           
+34          João Fernandes      Portugal   2024-10-01 00:00:00  447            7       39.62           
+15          Jennifer Peterson   Canada     2024-12-15 00:00:00  372            7       38.62           
+19          Tim Goyer           USA        2024-09-13 00:00:00  465            7       38.62           
+40          Dominique Lefebvre  France     2024-08-13 00:00:00  496            7       38.62           
+51          Joakim Johansson    Sweden     2024-12-02 00:00:00  385            7       38.62           
+2           Leonie Köhler       Germany    2024-07-13 00:00:00  527            7       37.62           
+13          Fernanda Ramos      Brazil     2024-11-01 00:00:00  416            7       37.62           
+36          Hannah Schneider    Germany    2024-11-14 00:00:00  403            7       37.62           
+38          Niklas Schröder     Germany    2024-06-30 00:00:00  540            7       37.62           
+55          Mark Taylor         Australia  2024-08-31 00:00:00  478            7       37.62           
+59          Puja Srivastava     India      2024-05-30 00:00:00  571            6       36.64           

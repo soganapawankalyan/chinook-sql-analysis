@@ -1,0 +1,112 @@
+table_name   
+-------------
+Album        
+Artist       
+Customer     
+Employee     
+Genre        
+Invoice      
+InvoiceLine  
+MediaType    
+Playlist     
+PlaylistTrack
+Track        
+table_name     row_count
+-------------  ---------
+Artist         275      
+Album          347      
+Track          3503     
+Genre          25       
+MediaType      5        
+Customer       59       
+Employee       8        
+Invoice        412      
+InvoiceLine    2240     
+Playlist       18       
+PlaylistTrack  8715     
+cid  name               type           notnull  dflt_value  pk
+---  -----------------  -------------  -------  ----------  --
+0    InvoiceId          INTEGER        1                    1 
+1    CustomerId         INTEGER        1                    0 
+2    InvoiceDate        DATETIME       1                    0 
+3    BillingAddress     NVARCHAR(70)   0                    0 
+4    BillingCity        NVARCHAR(40)   0                    0 
+5    BillingState       NVARCHAR(40)   0                    0 
+6    BillingCountry     NVARCHAR(40)   0                    0 
+7    BillingPostalCode  NVARCHAR(10)   0                    0 
+8    Total              NUMERIC(10,2)  1                    0 
+cid  name           type           notnull  dflt_value  pk
+---  -------------  -------------  -------  ----------  --
+0    InvoiceLineId  INTEGER        1                    1 
+1    InvoiceId      INTEGER        1                    0 
+2    TrackId        INTEGER        1                    0 
+3    UnitPrice      NUMERIC(10,2)  1                    0 
+4    Quantity       INTEGER        1                    0 
+cid  name          type          notnull  dflt_value  pk
+---  ------------  ------------  -------  ----------  --
+0    CustomerId    INTEGER       1                    1 
+1    FirstName     NVARCHAR(40)  1                    0 
+2    LastName      NVARCHAR(20)  1                    0 
+3    Company       NVARCHAR(80)  0                    0 
+4    Address       NVARCHAR(70)  0                    0 
+5    City          NVARCHAR(40)  0                    0 
+6    State         NVARCHAR(40)  0                    0 
+7    Country       NVARCHAR(40)  0                    0 
+8    PostalCode    NVARCHAR(10)  0                    0 
+9    Phone         NVARCHAR(24)  0                    0 
+10   Fax           NVARCHAR(24)  0                    0 
+11   Email         NVARCHAR(60)  1                    0 
+12   SupportRepId  INTEGER       0                    0 
+cid  name          type           notnull  dflt_value  pk
+---  ------------  -------------  -------  ----------  --
+0    TrackId       INTEGER        1                    1 
+1    Name          NVARCHAR(200)  1                    0 
+2    AlbumId       INTEGER        0                    0 
+3    MediaTypeId   INTEGER        1                    0 
+4    GenreId       INTEGER        0                    0 
+5    Composer      NVARCHAR(220)  0                    0 
+6    Milliseconds  INTEGER        1                    0 
+7    Bytes         INTEGER        0                    0 
+8    UnitPrice     NUMERIC(10,2)  1                    0 
+first_invoice        last_invoice         invoices  customers_who_bought  total_revenue  avg_order_value
+-------------------  -------------------  --------  --------------------  -------------  ---------------
+2021-01-01 00:00:00  2025-12-22 00:00:00  412       59                    2328.6         5.65           
+yr    invoices  revenue
+----  --------  -------
+2021  83        449.46 
+2022  83        481.45 
+2023  83        469.58 
+2024  83        477.53 
+2025  80        450.58 
+customers  null_company  null_state  null_postal  null_phone  null_fax  null_support_rep
+---------  ------------  ----------  -----------  ----------  --------  ----------------
+59         49            29          4            1           47        0               
+tracks  null_genre  null_album  null_composer
+------  ----------  ----------  -------------
+3503    0           0           977          
+Country         customers
+--------------  ---------
+USA             13       
+Canada          8        
+Brazil          5        
+France          5        
+Germany         4        
+United Kingdom  3        
+Czech Republic  2        
+India           2        
+Portugal        2        
+Argentina       1        
+Australia       1        
+Austria         1        
+Belgium         1        
+Chile           1        
+Denmark         1        
+Finland         1        
+Hungary         1        
+Ireland         1        
+Italy           1        
+Netherlands     1        
+Norway          1        
+Poland          1        
+Spain           1        
+Sweden          1        
